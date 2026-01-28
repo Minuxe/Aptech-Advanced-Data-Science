@@ -2,7 +2,13 @@ version: '3.8'
 
 services:
   jupyter:
+    # Option 1: Pull pre-built image from Docker Hub (recommended for users)
+    # Uncomment the line below and replace YOUR-DOCKERHUB-USERNAME with your actual username
+    # image: YOUR-DOCKERHUB-USERNAME/aptech-data-science:latest
+    
+    # Option 2: Build locally from Dockerfile (for development)
     build: .
+    
     container_name: aptech-data-science
     ports:
       - "8888:8888"
