@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: .
+    container_name: aptech-data-science
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
