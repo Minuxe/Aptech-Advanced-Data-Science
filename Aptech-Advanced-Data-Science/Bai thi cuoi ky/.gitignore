@@ -1,0 +1,8 @@
+# Ẩn tất cả file trong thư mục này khỏi git
+*
+
+# Chỉ giữ lại file bài thi của mình
+!TranDaiMinh_CuoiKy.ipynb
+
+# Giữ lại file .gitignore này
+!.gitignore
